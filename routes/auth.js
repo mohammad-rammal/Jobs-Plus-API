@@ -8,7 +8,7 @@ const testUser = require('../middleware/testUser');
 const rateLimiter = require('express-rate-limit');
 const apiLimit = rateLimiter({
     windowMs: 5 * 60 * 1000,
-    max: 3,
+    max: 30,
     message: {
         msg: 'To many requests from you, please try again after 5 minutes.',
     },
